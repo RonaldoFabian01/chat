@@ -1,0 +1,116 @@
+  /* Estilos generales */
+  body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #e5ddd5; /* Color de fondo similar al de WhatsApp */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  /* Contenedor principal que simula un dispositivo móvil */
+  .phone-container {
+    width: 100%;
+    max-width: 400px; /* Ancho máximo para simular un teléfono móvil */
+    height: 50vh; /* Altura completa de la ventana gráfica */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra para simular un teléfono */
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  /* Encabezado del chat */
+  .whatsapp-header {
+    background-color: #df4e0b; /* Color de fondo del encabezado de WhatsApp */
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  }
+  /* Foto de perfil */
+  .profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ccc; /* Color de fondo para la foto de perfil */
+    margin-right: 10px;
+  }
+  /* Contenedor del chat */
+  .chat-container {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto; /* Barra de desplazamiento vertical */
+    background-color: #fff; /* Fondo blanco para los mensajes */
+  }
+  /* Globos de mensaje */
+  .message {
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    max-width: 60%;
+    position: relative;
+  }
+  /* Mensajes enviados */
+  .sent {
+    background-color: #fbc7af; /* Color de los mensajes enviados */
+    margin-left: auto;
+  }
+  /* Mensajes recibidos */
+  .received {
+   /* background-color: #fff;  Color de los mensajes recibidos */
+  background-color: #e0e0e0; /* Color de fondo gris para los mensajes recibidos */
+
+
+  }
+  /* Información del mensaje */
+  .message-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8em;
+    color: #777;
+  }
+  /* Barra de entrada */
+  .input-bar {
+    background-color: #f0f0f0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  }
+  /* Campo de texto para escribir mensajes */
+  .input-bar input {
+    flex-grow: 1;
+    padding: 10px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 10px;
+  }
+  /* Botón de enviar */
+  .input-bar button {
+    background-color: #df4e0b;
+    color: #fff;
+    border: none;
+    border-radius: 10%;
+    padding: 10px 15px;
+  }
+  /* Media query para dispositivos móviles */
+  @media screen and (min-width: 401px) {
+    .phone-container {
+      max-width: 400px; /* Mantiene el ancho fijo para dispositivos de escritorio */
+    }
+  }
+
+.socialarea {
+    display: flex;
+}
+
+.column {
+    flex: 1; /* Cada columna ocupa el mismo espacio */
+    padding: 20px;
+    box-sizing: border-box; /* Incluye padding en el tamaño total */
+    border: 1px solid #ccc; /* Bordes para visualizar las columnas */
+}
+
+li{
+    cursor:pointer;
+}
+
+li:hover{
+    font-weight: bold;
+}

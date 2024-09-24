@@ -1,0 +1,124 @@
+<h1>Lista de amigos</h1>
+
+<div class="socialarea">
+    <div class="friends column">
+        <ul >
+            <li *ngFor="let amigo of Listfriend" (click)="openchat(amigo.name)">
+                {{amigo.name}}
+            </li>
+        </ul>
+    </div>
+    <div class="chat column">
+        <div class="phone-container">
+            <div class="whatsapp-header">
+              <div class="profile-pic"></div>
+              <div>{{name}}</div>
+            </div>
+            <div class="chat-container">
+              <!-- Mensajes aquí -->
+              <div class="message sent">
+                ¡Hola! ¿Cómo va todo?
+                <div class="message-info">
+                  <span>10:15</span>
+                </div>
+              </div>
+              <div class="message received">
+                ¡Hola! Bien, ¿y tú?
+                <div class="message-info">
+                  <span>10:16</span>
+                </div>
+              </div>
+              <div class="message sent">
+                Todo bien por aquí. ¿Listo para el partido de mañana?
+                <div class="message-info">
+                  <span>10:17</span>
+                </div>
+              </div>
+              <div class="message received">
+                Sí, ya tengo las entradas.
+                <div class="message-info">
+                  <span>10:18</span>
+                </div>
+              </div>
+              <div class="message sent">
+                Genial, ¿a qué hora quedamos?
+                <div class="message-info">
+                  <span>10:19</span>
+                </div>
+              </div>
+              <div class="message received">
+                ¿Qué tal si es a las 3pm?
+                <div class="message-info">
+                  <span>10:20</span>
+                </div>
+              </div>
+              <div class="message sent">
+                Perfecto, nos vemos en la entrada principal.
+                <div class="message-info">
+                  <span>10:21</span>
+                </div>
+              </div>
+              <div class="message received">
+                ¿Vamos a llevar algo para comer?
+                <div class="message-info">
+                  <span>10:22</span>
+                </div>
+              </div>
+              <div class="message sent">
+                Puedo traer unas galletas y tú algo de beber.
+                <div class="message-info">
+                  <span>10:23</span>
+                </div>
+              </div>
+              <div class="message received">
+                De acuerdo, llevaré jugo y agua.
+                <div class="message-info">
+                  <span>10:24</span>
+                </div>
+              </div>
+              <div class="message sent">
+                ¿Has visto el pronóstico del tiempo?
+                <div class="message-info">
+                  <span>10:25</span>
+                </div>
+              </div>
+              <div class="message received">
+                Sí, parece que hará sol todo el día.
+                <div class="message-info">
+                  <span>10:26</span>
+                </div>
+              </div>
+              <div class="message sent">
+                Perfecto para un día de fútbol.
+                <div class="message-info">
+                  <span>10:27</span>
+                </div>
+              </div>
+              <div class="message received">
+                ¡Sí! Ya quiero que empiece el juego.
+                <div class="message-info">
+                  <span>10:28</span>
+                </div>
+              </div>
+              <div class="message sent">
+                Bueno, te dejo que tengo que terminar un trabajo. ¡Hasta mañana!
+                <div class="message-info">
+                  <span>10:29</span>
+                </div>
+              </div>
+              <div class="message received">
+                Vale, ¡hasta mañana!
+                <div class="message-info">
+                  <span>10:30</span>
+                </div>
+              </div>
+            </div>
+            <div class="input-bar">
+              <input type="text" placeholder="Escribe un mensaje aquí">
+              <button>Enviar</button>
+            </div>
+          </div>
+    </div>
+
+
+</div>
